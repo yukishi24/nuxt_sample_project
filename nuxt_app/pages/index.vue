@@ -1,3 +1,9 @@
 <template>
-    <h1>hello nuxt</h1>
+  <Tutorial/>
 </template>
+
+<script>
+export default {
+  name: 'IndexPage'
+}
+</script>
