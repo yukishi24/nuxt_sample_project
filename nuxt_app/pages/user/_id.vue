@@ -1,19 +1,17 @@
 <!-- テンプレート -->
 <template>
-  <div>
     <div>{{message}}</div>
-    <RouterLink to="/next">次ページへ</RouterLink>
-  </div>
 </template>
 
 <!-- スクリプト -->
 <script>
 export default {
-  data: function() {
-    return {
-      message: 'Hello Nuxt!'
+    computed: {
+    message: function() {
+        let user_id = this.$route.params.id
+        return "ユーザーID["+ user_id +"]のページです。"
     }
-  }
+    }
 }
 </script>
 

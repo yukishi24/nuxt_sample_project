@@ -1,19 +1,19 @@
 <!-- テンプレート -->
 <template>
-  <div>
+    <div>
     <div>{{message}}</div>
-    <RouterLink to="/next">次ページへ</RouterLink>
-  </div>
+    <RouterLink to="/">トップページへ</RouterLink>
+    </div>
 </template>
 
 <!-- スクリプト -->
 <script>
 export default {
-  data: function() {
+    data: function() {
     return {
-      message: 'Hello Nuxt!'
+        message: 'Hello NextPage!'
     }
-  }
+    }
 }
 </script>
 
