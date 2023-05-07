@@ -1,9 +1,21 @@
+<!-- テンプレート -->
 <template>
-  <Tutorial/>
+  <div>
+    {{message}}
+  </div>
 </template>
 
+<!-- スクリプト -->
 <script>
 export default {
-  name: 'IndexPage'
+  data: function() {
+    return {
+      message: 'Hello Nuxt!'
+    }
+  }
 }
 </script>
+
+<!-- スタイル -->
+<style>
+</style>
